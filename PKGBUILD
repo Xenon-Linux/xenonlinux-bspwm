@@ -31,4 +31,6 @@ package(){
   cp -r ${srcdir}/* "$configdir"
   chmod -R +x "${wmdir}"
   install -Dm 755 ${srcdir}/bspwm/bspwmrc "${wmdir}"/bspwmrc
+  chmod -R +x "$pkgdir"/etc/skel/.fehbg
+  chmod -R +x "$pkgdir"/etc/skel/.xinitrc
 }
