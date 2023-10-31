@@ -6,6 +6,9 @@ killall -q sxhkd
 sleep 0.2
 sxhkd -c ~/.config/bspwm/config/sxhkdrc &
 
+# make wallpaper executable
+chmod +x ~/.fehbg &
+
 # Audio
 pipewire &
 
