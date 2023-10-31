@@ -23,7 +23,7 @@ prepare(){
 }
 
 package(){
-  local skeldir="$pkgdir"/etc/skel/.config
+  local skeldir="$pkgdir"/etc/skel
 	local configdir="$skeldir"/.config
 	local wmdir="$configdir"/bspwm
 
