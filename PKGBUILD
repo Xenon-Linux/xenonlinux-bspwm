@@ -1,4 +1,5 @@
 pkgname=xenonlinux-bspwm
+pkgver=1.0
 pkgrel=1
 pkgdesc="bspwm config for xenonlinux"
 arch=('any')
