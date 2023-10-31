@@ -1,0 +1,4 @@
+#!/bin/bash
+
+killall -q polybar
+polybar -q main -c ~/.config/bspwm/config/polybar/polybar.ini
