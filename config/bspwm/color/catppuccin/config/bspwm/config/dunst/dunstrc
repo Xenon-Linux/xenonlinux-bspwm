@@ -3,7 +3,7 @@
     follow = none
     width = 300
     height = 300
-    origin = top-right
+    origin = bottom-right
     offset = 20x20
     scale = 0
     notification_limit = 5
@@ -23,7 +23,7 @@
     separator_color = auto
     sort = yes
     idle_threshold = 0
-    font = Roboto Mono 10
+    font = Cascadia Code 10
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"

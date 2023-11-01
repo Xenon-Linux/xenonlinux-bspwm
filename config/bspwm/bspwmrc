@@ -6,20 +6,13 @@ killall -q sxhkd
 sleep 0.2
 sxhkd -c ~/.config/bspwm/config/sxhkdrc &
 
-# make wallpaper executable
-chmod +x ~/.fehbg &
-
 # Audio
 pipewire &
 
 # Workspaces
-workspaces() {
-	for monitor in "$(xrandr -q | grep -w 'connected' | cut -d' ' -f1)"; do
-		bspc monitor "${monitor}" -d '1' '2' '3' '4' '5' '6'
-	done
-}
-
-workspaces
+for monitor in "$(xrandr -q | grep -w 'connected' | cut -d' ' -f1)"; do
+		bspc monitor "$monitor" -d '1' '2' '3' '4' '5' '6' '7' '8' '9'
+done
 
 # bspwm config
 bspc config remove_unplugged_monitors true
@@ -30,7 +23,6 @@ bspc config split_ratio 0.5
 bspc config single_monocle true
 bspc config borderless_monocle false
 bspc config gapless_monocle false
-
 
 # Screen setup
 ~/.screenlayout/monitor.sh

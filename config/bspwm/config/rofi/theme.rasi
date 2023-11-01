@@ -1,18 +1,18 @@
 configuration {
-	font:							"Roboto Mono 11";
-    show-icons:                     true;
-    display-drun: 					"run";
-    drun-display-format:            "{name}";
-    disable-history:                false;
-	sidebar-mode: 					false;
+	font:							              "Cascadia Code 11";
+  show-icons:                     false;
+  display-drun: 					        "run";
+  drun-display-format:            "{name}";
+  disable-history:                false;
+	sidebar-mode: 					        false;
 }
 
 * {
     background:                     #101012BF;
-    background-alt:              	#00000000;
+    background-alt:              	  #00000000;
     background-bar:                 #f2f2f215;
     foreground:                     #f2f2f2EE;
-    accent:			            	#3DAEE966;
+    accent:			            	      #3DAEE966;
 }
 
 
@@ -27,7 +27,7 @@ window {
 	width:							100%;
 	height:							100%;
     location:                       center;
-    font:							"Roboto Mono 16";
+    font:							"Cascadia Code 16";
 }
 
 // prompt
