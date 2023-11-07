@@ -22,7 +22,7 @@ schemes:
       cyan:    '0x8affff'
       white:   '0xffffff'
 
-  snow: &snow
+  snowy: &snowy
     primary:
       background: '#f6f6f6'
       foreground: '#262626'
@@ -231,5 +231,26 @@ schemes:
       magenta: '#d7a0e6'
       cyan:    '#999999'
       white:   '#dddddd'
+  
+  bloom: &bloom
+    primary:
+      background: '#fffaf5'
+      foreground: '#4b4646'
+    normal:
+      black: '#4b4646'
+      red: '#eb8c8c'
+      green: '#96e6a5'
+      yellow: '#f0cd96'
+      blue: '#9bb9f0'
+      magenta: '#d7a0e6'
+      cyan: '#a0e1d2'
+    bright:
+      black: '#4b4646'
+      red: '#eb8c8c'
+      green: '#96e6a5'
+      yellow: '#f0cd96'
+      blue: '#9bb9f0'
+      magenta: '#d7a0e6'
+      cyan: '#a0e1d2'
 
 colors: *macaroni

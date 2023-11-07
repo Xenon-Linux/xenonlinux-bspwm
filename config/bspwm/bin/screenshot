@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+notify(){
+  notify-send "Screenshot saved to ~/Pictures/$(date +"%Y-%m-%d-%T")-screenshot.png"
+}
+
+scrot_full(){
+    scrot ~/Pictures/%Y-%m-%d-%T-screenshot.png && notify
+}
+
+scrot_select(){
+  scrot -s ~/Pictures/%Y-%m-%d-%T-screenshot.png && notify
+}
+
+scrot_delay(){
+  scrot --delay 5 ~/Pictures/%Y-%m-%d-%T-screenshot.png && notify
+}
+
+
+case "$1" in
+  full ) scrot_full ;;
+  select ) scrot_select ;;
+  delay ) scrot_delay ;;
+esac
+

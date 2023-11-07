@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 notify_cmd(){ 
     dunstify --replace=11111 --hints=int:value:"$(get_brightness)" "Brightness" "$(get_brightness)%"

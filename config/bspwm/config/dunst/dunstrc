@@ -19,11 +19,10 @@
     horizontal_padding = 8
     text_icon_padding = 0
     frame_width = 1
-    frame_color = "#101010"
     separator_color = auto
     sort = yes
     idle_threshold = 0
-    font = Cascadia Code 10
+    font = Roboto Mono 10
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
@@ -72,7 +71,7 @@
 [urgency_critical]
     background = "#101010"
     foreground = "#f8f8f6"
-    frame_color = "#ff8989"
+    frame_color = "#ff5555"
     timeout = 120
     icon = /usr/share/icons/Arc-X-D/status/16/dialog-warning.png
 

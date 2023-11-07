@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.config/bspwm/color/nord/wall/nord.png
+feh --no-fehbg --bg-fill ~/.config/bspwm/color/nord/nord.png

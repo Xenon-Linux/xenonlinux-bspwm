@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.config/bspwm/color/vaporwave/wall/vapor.png
+feh --no-fehbg --bg-fill ~/.config/bspwm/color/vaporwave/vapor.png

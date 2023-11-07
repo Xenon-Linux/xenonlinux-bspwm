@@ -1,9 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 PICTURE=/tmp/i3lock.png
 SCREENSHOT="scrot -z $PICTURE"
 
-BLUR="5x4"
+BLUR="12x10"
 
 $SCREENSHOT
 convert $PICTURE -blur $BLUR $PICTURE

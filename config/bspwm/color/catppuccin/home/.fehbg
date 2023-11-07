@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.config/bspwm/color/catppuccin/wall/catppuccin.png
+feh --no-fehbg --bg-fill ~/.config/bspwm/color/catppuccin/catppuccin.png

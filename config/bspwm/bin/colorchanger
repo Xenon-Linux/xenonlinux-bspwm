@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 color_dir="$HOME/.config/bspwm/color"
 rofi_command="rofi -dmenu -p colorschemes -theme ~/.config/bspwm/config/rofi/theme.rasi"
@@ -15,17 +15,24 @@ color=$(printf "%s\n" "${options[@]}" | $rofi_command)
 # If a valid option was selected, write the value to config files
 [[ -n "$color" ]] || exit 1
 
+source $HOME/.config/bspwm/color/$color/$color.sh
+
 copy(){
   cp -R ~/.config/bspwm/color/$color/config/* ~/.config/
   cp -f "$HOME"/.config/bspwm/color/$color/home/.fehbg "$HOME"
 }
 
-change_term_col(){
+term_col(){
     sed -i -e "s/colors: .*/colors: *$color/" ~/.config/alacritty/colors.yml
 }
 
-change_gtk(){
+gtk(){
     sed -i -e "s/gtk-theme-name=.*/gtk-theme-name=$color/" ~/.config/gtk-3.0/settings.ini
+}
+
+dunst(){
+  sed -i -e "s/background = .*/background = \"$bg\"/g"\
+         -e "s/foreground = .*/foreground = \"$fg\"/g" ~/.config/bspwm/config/dunst/dunstrc
 }
 
 restart(){
@@ -33,9 +40,11 @@ restart(){
     pkill -USR1 -x sxhkd
 }
 
+# Main
 copy
-change_term_col
-change_gtk
+term_col
+gtk
+dunst
 restart
 
 exit 0

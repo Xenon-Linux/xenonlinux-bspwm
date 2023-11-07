@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.config/bspwm/color/dracula/wall/dracula.png
+feh --no-fehbg --bg-fill ~/.config/bspwm/color/dracula/dracula.png

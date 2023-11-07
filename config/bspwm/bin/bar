@@ -1,6 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 killall -q polybar
+sleep 0.2
 if type "xrandr"; then
   for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
     MONITOR=$m polybar -q main -c ~/.config/bspwm/config/polybar/polybar.ini

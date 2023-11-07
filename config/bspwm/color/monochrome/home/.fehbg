@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/.config/bspwm/color/monochrome/wall/mono.png
+feh --no-fehbg --bg-fill ~/.config/bspwm/color/monochrome/mono.png
